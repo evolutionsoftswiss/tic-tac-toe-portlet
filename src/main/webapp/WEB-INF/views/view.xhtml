@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<f:view
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://www.primefaces.org/ui"
+>
+	<h:head>
+		<h:outputStylesheet library="css" name="tic-tac-toe.css" />
+	</h:head>
+	<h:body styleClass="ticTacToeBody">
+			<div class="ui-g">
+				<h:outputText styleClass="gameStone" value="X" />
+				<h:outputText styleClass="gameStone" value="O" />
+				<h:outputText styleClass="gameStone gameStoneRight" value="X" />
+			</div>
+			<div class="ui-g">
+				<h:outputText styleClass="gameStone" value="X" />
+				<h:outputText styleClass="gameStone" value="X" />
+				<h:outputText styleClass="gameStone gameStoneRight" value="X" />
+			</div>
+			<div class="ui-g">
+				<h:outputText styleClass="gameStone gameStoneBottom" value="X" />
+				<h:outputText styleClass="gameStone gameStoneBottom" value="X" />
+				<h:outputText styleClass="gameStone gameStoneBottom gameStoneRight" value="X" />
+			</div>
+	</h:body>
+</f:view>

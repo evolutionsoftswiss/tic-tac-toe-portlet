@@ -1,0 +1,34 @@
+.ticTacToeBody {
+	line-height: normal;
+}
+
+.bold-hello-world {
+    font-weight: bold;
+}
+
+.gameStone {
+	display: inline-block;
+	width: 100px;
+	heigth: 100px;
+	padding: 5px;
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+	font-size: 5em;
+	text-align: center;
+}
+
+.gameStoneRight {
+	border-right: 1px solid #777;
+}
+
+.gameStoneBottom {
+	border-bottom: 1px solid #777;
+}
+
+.gameStoneX {
+	color: red;
+}
+
+.gameStoneO {
+	color: red;
+}
