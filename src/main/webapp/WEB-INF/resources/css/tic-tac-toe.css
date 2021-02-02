@@ -1,32 +1,50 @@
 .ticTacToeBody {
 	line-height: normal;
+	padding: 1em;
 }
 
-.bold-hello-world {
-    font-weight: bold;
+.menuPanel {
+	padding-right: 2em;
 }
 
-.gameStone {
-	display: inline-block;
-	width: 100px;
-	heigth: 100px;
-	padding: 5px;
-	border-top: 1px solid #777;
-	border-left: 1px solid #777;
+.menuButton {
+	padding: 0.2em 1em !important;
+}
+
+.menuLabel {
+	padding: 0.2em 1em;
+}
+
+.playgroundPanel {
+	padding-top: 2em;
+}
+
+.statusText {
+	padding-top: 2em;
+}
+
+.gameField {
+	margin-right: 0 !important;
+	border-left: 1px solid #AAA;
+	border-top: 1px solid #AAA;
+	border-box: initial;
+	display: inline-block !important;
+	width: 1.4em;
 	font-size: 5em;
 	text-align: center;
 }
 
-.gameStoneRight {
-	border-right: 1px solid #777;
+.ui-button-text-only .ui-button-text {
+	padding: 0.1em !important;
+	min-height: 1.4em;
 }
 
-.gameStoneBottom {
-	border-bottom: 1px solid #777;
+.gameStone {
+	
 }
 
 .gameStoneX {
-	color: red;
+	color: blue;
 }
 
 .gameStoneO {

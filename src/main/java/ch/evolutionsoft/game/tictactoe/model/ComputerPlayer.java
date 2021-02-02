@@ -5,48 +5,30 @@ import ch.evolutionsoft.game.tictactoe.treesearch.AlphaBetaSearch;
 /**
  * @author EvolutionSoft
  */
-public class ComputerPlayer extends Player implements Runnable {
+public class ComputerPlayer extends Player {
 
 	private AlphaBetaSearch alphaBetaSearch;
-	private Game game;
-	
+
 	public ComputerPlayer(char color) {
 
 		super(color);
 	}
-	
+
+
 	void move(Game game) {
 
-		this.game = game;
+		alphaBetaSearch = new AlphaBetaSearch(game.getPlayground().getPosition());
 
-		Thread searchThread = new Thread(this);
-		searchThread.start();
+		if (this.color == Player.FIRST_PLAYER) {
 
-        try {
+			alphaBetaSearch.searchMax();
 
-            searchThread.join();
+		} else {
 
-        } catch (InterruptedException e) {
+			alphaBetaSearch.searchMin();
+		}
 
-            Thread.currentThread().interrupt();
-        }
-
-        Move move = alphaBetaSearch.getBestMove();
+		Move move = alphaBetaSearch.getBestMove();
 		game.move(move);
 	}
-
-    @Override
-    public void run() {
-
-        alphaBetaSearch = new AlphaBetaSearch(game.getPlayground().getPosition());
-
-        if (this.color == Player.FIRST_PLAYER) {
-
-            alphaBetaSearch.searchMax();
-
-        } else {
-
-            alphaBetaSearch.searchMin();
-        }
-    }
 }

@@ -4,9 +4,8 @@
 <liferay-portlet-app>
 	<portlet>
 		<portlet-name>tic-tac-toe</portlet-name>
-		<icon>/resources/images/icon.png</icon>
 		<requires-namespaced-parameters>false</requires-namespaced-parameters>
-		<ajaxable>false</ajaxable>
+		<ajaxable>true</ajaxable>
 	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>

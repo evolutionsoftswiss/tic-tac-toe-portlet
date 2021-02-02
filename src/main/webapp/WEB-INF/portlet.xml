@@ -3,7 +3,7 @@
 <portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
 	<portlet>
 		<portlet-name>tic-tac-toe</portlet-name>
-		<display-name>tic-tac-toe</display-name>
+		<display-name>Tic Tac Toe</display-name>
 		<portlet-class>javax.portlet.faces.GenericFacesPortlet</portlet-class>
 		<init-param>
 			<name>javax.portlet.faces.defaultViewId.view</name>
@@ -14,7 +14,7 @@
 			<mime-type>text/html</mime-type>
 		</supports>
 		<portlet-info>
-			<title>tic-tac-toe</title>
+			<title>Tic Tac Toe</title>
 			<short-title>tic-tac-toe</short-title>
 			<keywords>tic-tac-toe</keywords>
 		</portlet-info>

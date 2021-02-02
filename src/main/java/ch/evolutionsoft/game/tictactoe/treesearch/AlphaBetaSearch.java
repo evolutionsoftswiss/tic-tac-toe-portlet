@@ -21,6 +21,7 @@ public class AlphaBetaSearch {
 	private Move bestMove;
 	private int numberOfNodes;
 
+
 	public AlphaBetaSearch(char[][] position) {
 
 		char[][] positionCopy = new char[Playground.MAX_ROW][Playground.MAX_COLUMN];
@@ -29,15 +30,18 @@ public class AlphaBetaSearch {
 		this.bestMove = null;
 	}
 
+
 	public Move getBestMove() {
 
 		return this.bestMove;
 	}
 
+
 	public int getNumberOfNodes() {
 
 		return this.numberOfNodes;
 	}
+
 
 	public void searchMax() {
 
@@ -61,6 +65,7 @@ public class AlphaBetaSearch {
 		}
 	}
 
+
 	public void searchMin() {
 
 		int bestValue = Integer.MAX_VALUE;
@@ -82,6 +87,7 @@ public class AlphaBetaSearch {
 			this.playGround.undoMove(currentMove.getRow(), currentMove.getColumn());
 		}
 	}
+
 
 	private int max(int alpha, int beta, int depth) {
 
@@ -116,6 +122,7 @@ public class AlphaBetaSearch {
 		}
 		return value;
 	}
+
 
 	private int min(int alpha, int beta, int depth) {
 
