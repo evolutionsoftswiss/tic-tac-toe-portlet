@@ -31,6 +31,8 @@ public class GameView implements Observer {
 	boolean switchColorsEnabled;
   String startPlayerText = PLAY_WITH_O;
 
+	Random random = new Random();
+
 
   @PostConstruct
 	public void initialize() {
@@ -183,10 +185,9 @@ public class GameView implements Observer {
 		
 		if (firstPlayer instanceof ComputerPlayer) {
 			
-			Random random = new Random();
 			Move randomMove = new Move(
-					random.nextInt(Playground.MAX_ROW),
-					random.nextInt(Playground.MAX_COLUMN),
+					this.random.nextInt(Playground.MAX_ROW),
+					this.random.nextInt(Playground.MAX_COLUMN),
 					Player.FIRST_PLAYER);
 			this.game.move(randomMove);
 		}
