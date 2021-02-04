@@ -1,0 +1,51 @@
+.ticTacToeBody {
+	line-height: normal;
+	padding: 1em;
+}
+
+.menuPanel {
+	padding-right: 2em;
+}
+
+.menuButton {
+	padding: 0.2em 1em !important;
+}
+
+.menuLabel {
+	padding: 0.2em 1em;
+}
+
+.playgroundPanel {
+	padding-top: 2em;
+}
+
+.statusText {
+	padding-top: 2em;
+}
+
+.gameField {
+	margin-right: 0 !important;
+	border-left: 1px solid #AAA;
+	border-top: 1px solid #AAA;
+	display: inline-block !important;
+	width: 1.4em;
+	font-size: 5em;
+	text-align: center;
+}
+
+.ui-button-text-only .ui-button-text {
+	padding: 0.1em !important;
+	min-height: 1.4em;
+}
+
+.gameStone {
+	
+}
+
+.gameStoneX {
+	color: blue;
+}
+
+.gameStoneO {
+	color: red;
+}
