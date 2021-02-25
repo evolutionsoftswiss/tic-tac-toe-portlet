@@ -11,6 +11,9 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import ch.evolutionsoft.game.tictactoe.model.ComputerPlayer;
 import ch.evolutionsoft.game.tictactoe.model.Game;
 import ch.evolutionsoft.game.tictactoe.model.HumanPlayer;
@@ -33,6 +36,8 @@ public class GameView implements Observer {
 
 	Random random = new Random();
 
+	static final Logger gameLog = LogManager.getLogger(GameView.class); 
+
 
   @PostConstruct
 	public void initialize() {
@@ -42,6 +47,8 @@ public class GameView implements Observer {
   				new HumanPlayer(Player.SECOND_PLAYER));
 		this.game.addObserver(this);
 		this.initGame();
+		
+		gameLog.info("Tic Tac Toe Game started.");
 	}
 
 	
