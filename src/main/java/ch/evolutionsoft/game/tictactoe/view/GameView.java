@@ -48,7 +48,7 @@ public class GameView implements Observer {
 		this.game.addObserver(this);
 		this.initGame();
 		
-		gameLog.info("Tic Tac Toe Game started.");
+		gameLog.info("Tic Tac Toe Game initialized.");
 	}
 
 	
@@ -79,6 +79,8 @@ public class GameView implements Observer {
 	public void newGame() {
 		
 		this.initGame();
+		
+		gameLog.info("Tic Tac Toe Game restarted.");
 	}
 
 
