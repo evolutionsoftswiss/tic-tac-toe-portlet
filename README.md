@@ -4,7 +4,7 @@ A Tic Tac Toe Portlet designed for liferay.
 You find a running version on [evolutionsoft.ch](https://evolutionsoft.ch/tic-tac-toe).
 
 ## License
-Tic Tac Toe portlet is provided under the GPL-3.0 or later GPL versions license.
+Tic Tac Toe portlet is provided under the Apache-2.0 license.
 
 ## Installation instructions
 You can download and install the latest release war file on a recent version of liferay.
