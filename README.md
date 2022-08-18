@@ -4,7 +4,7 @@ Please see the follow project [tic-tac-toe-webapp](https://github.com/evolutions
 
 A Tic Tac Toe Portlet designed for liferay.
 
-You find a running version on [evolutionsoft.ch](https://evolutionsoft.ch/tic-tac-toe).
+You find a running version of the new webapp on [evolutionsoft.ch](https://evolutionsoft.ch/tic-tac-toe).
 
 ## License
 Tic Tac Toe portlet is provided under the Apache-2.0 license.
