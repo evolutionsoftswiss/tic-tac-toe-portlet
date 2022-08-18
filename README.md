@@ -1,4 +1,7 @@
-# Tic Tac Toe portlet
+# Tic Tac Toe portlet [ARCHIVED]
+
+Please see the follow project [tic-tac-toe-webapp](https://github.com/evolutionsoftswiss/tic-tac-toe-webapp)
+
 A Tic Tac Toe Portlet designed for liferay.
 
 You find a running version on [evolutionsoft.ch](https://evolutionsoft.ch/tic-tac-toe).
